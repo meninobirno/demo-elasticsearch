@@ -10,7 +10,7 @@ services:
       ES_JAVA_OPTS: "-Xms2g -Xmx2g"
       xpack.monitoring.enabled: "true"
     volumes:
-      - ./esdata:/usr/share/elasticsearch/data
+      - ./esdata:/var/lib/elasticsearch/data
       
   kibana:
     image: docker.elastic.co/kibana/kibana:7.17.0
